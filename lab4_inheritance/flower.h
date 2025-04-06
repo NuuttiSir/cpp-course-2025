@@ -13,12 +13,13 @@
 class Flower : public Drawable
 {
 	private:
-		Shape stem;
-		Shape pistil;  // center piece of flower
-		Shape leaf;
+		Shape* stem;
+		Shape* pistil;  // center piece of flower
+		Shape* leaf;
 
 		void drawPedals(PNG& canvas, const Vector2& center, int x, int y) const;
 	public:
+		//~Flower();
 		Flower(const Vector2& center);
 		void draw(PNG& canvas) const;
 };

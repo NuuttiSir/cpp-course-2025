@@ -16,7 +16,7 @@
 const double PI = 3.141592;
 
 Circle::Circle(const Vector2& pcenter, const RGBAPixel& pcolor, int pradius)
-  : radius_(pradius)
+  : Shape(pcenter, pcolor), radius_(pradius) 
 {
 	/* Nothing.  See initialization list. */
 }
@@ -43,7 +43,7 @@ void Circle::drawPoints(PNG & canvas, int x, int y) const
 {
 	int i;
 	int j;
-	while (y > 0)
+	while (y >= 0)
 	{
 		i = static_cast<int>(this->center().x() + x);
 		j = static_cast<int>(this->center().y() + y);
