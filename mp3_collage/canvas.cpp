@@ -34,7 +34,6 @@ void Canvas::Add(size_t x, size_t y, const Vector2 &pos, const Vector2 &scale,
   // rendering of the layers is correct.
   PNGLayer *layer = new PNGLayer(x, y, pos, scale, col, name);
   layers.push_back(std::unique_ptr<PNGLayer>(layer));
-  layercount++;
 }
 
 // Get the latest layer added to the canvas
@@ -42,7 +41,7 @@ void Canvas::Add(size_t x, size_t y, const Vector2 &pos, const Vector2 &scale,
 PNGLayer &Canvas::GetTopLayer() {
   // TODO instead of a single layer,
   // Return the latest/top layer from the list
-  return *layers[layercount - 1];
+  return *layers[layers.size() - 1];
 }
 
 // Get a layer by its name
@@ -56,7 +55,6 @@ PNGLayer &Canvas::GetByName(const std::string &name) {
       return *layers[i];
     }
   }
-  std::cerr << "Layer with name " << name << " not found!" << std::endl;
   return *layers[0];
 }
 
@@ -66,10 +64,9 @@ void Canvas::Remove(const std::string &name) {
   // TODO instead of a single layer, should work for a list
   // This removes the frame for the logo in the collage
   // Your code here
-  for (size_t i = 0; i < layercount; i++) {
+  for (size_t i = 0; i < layers.size(); i++) {
     if (layers[i]->getName() == name) {
       layers.erase(layers.begin() + i);
-      layercount--;
       return;
     }
   }
@@ -104,9 +101,9 @@ void Canvas::Swap(const std::string &name1, const std::string &name2) {
 // Draws the layers in their given position and scales them accordingly
 // Blends drawn layers based on alpha channel (transparency)
 void Canvas::draw(PNG &canvas) const {
-  for (size_t i = 0; i < layercount; i++) {
+  for (size_t i = 0; i < layers.size(); i++) {
     // update this line
-    PNGLayer &layer = *layers[i];
+    const PNGLayer &layer = *layers[i];
 
     for (size_t x = 0, xmax = layer.width(); x < xmax; x++) {
       for (size_t y = 0, ymax = layer.height(); y < ymax; y++) {
@@ -130,9 +127,9 @@ void Canvas::draw(PNG &canvas) const {
             // ys Multiply x and y by layer scale
 
             // Modify the two lines below
-            int x1 = x * (int)sc.x() + (int)pos.x();
-            int y1 = y * (int)sc.y() + (int)pos.y();
-            // Add these lines to your code
+            int x1 = x * sc.x() + pos.x();
+            int y1 = y * sc.y() + pos.y();
+
             x1 += xs;
             y1 += ys;
 
@@ -150,15 +147,9 @@ void Canvas::draw(PNG &canvas) const {
 
               // Modify the three lines below
               // result = (source.RGB * source.A) + (dest.RGB * (1 - source.A))
-              colc.red =
-                  ((coli.red * coli.alpha) + (colc.red * (255 - coli.alpha))) /
-                  255;
-              colc.green = ((coli.green * coli.alpha) +
-                            (colc.green * (255 - coli.alpha))) /
-                           255;
-              colc.blue = ((coli.blue * coli.alpha) +
-                           (colc.blue * (255 - coli.alpha))) /
-                          255;
+              colc.red   = ((coli.red   * coli.alpha) + (colc.red   * (255 - coli.alpha))) / 255;
+              colc.green = ((coli.green * coli.alpha) + (colc.green * (255 - coli.alpha))) / 255;
+              colc.blue  = ((coli.blue  * coli.alpha) + (colc.blue  * (255 - coli.alpha))) / 255;
               // We can keep the canvas opaque, no reason to change it
               colc.alpha = 255;
             }

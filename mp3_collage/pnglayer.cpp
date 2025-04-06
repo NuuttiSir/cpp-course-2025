@@ -16,7 +16,11 @@ PNGLayer::PNGLayer(size_t x, size_t y, const Vector2 &position,
   // background is transparent Your code here
   for (size_t i = 0; i < x; ++i) {
     for (size_t j = 0; j < y; ++j) {
-      (*this)(i, j).alpha = 0;
+      RGBAPixel& pixel = (*this)(i, j);
+      pixel.red = 255;
+      pixel.green = 255;
+      pixel.blue = 255;
+      pixel.alpha = 0;
     }
   }
 }
