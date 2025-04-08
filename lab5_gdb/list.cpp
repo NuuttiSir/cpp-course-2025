@@ -26,27 +26,20 @@
  * Destroys the current List. This function ensures that
  * memory does not leak on destruction of a list.
  */
-template <class T>
-List<T>::~List()
-{
-    clear();
-}
+template <class T> List<T>::~List() { clear(); }
 
 /**
  * Destroys all dynamically allocated memory associated with the current
  * List class.
  */
-template <class T>
-void List<T>::clear()
-{
-    ListNode* temp;
-    while (head != NULL)
-    {
-        temp = head;
-        head = head->next;
-        delete temp;
-    }
-    length = 0;
+template <class T> void List<T>::clear() {
+  ListNode *temp;
+  while (head != NULL) {
+    temp = head;
+    head = head->next;
+    delete temp;
+  }
+  length = 0;
 }
 
 /**
@@ -55,13 +48,11 @@ void List<T>::clear()
  *
  * @param ndata The data to be inserted.
  */
-template <class T>
-void List<T>::insertFront(T const & ndata)
-{
-    ListNode* newNode = new ListNode(ndata);
-    newNode->next = head;
-    head = newNode;
-    length++;
+template <class T> void List<T>::insertFront(T const &ndata) {
+  ListNode *newNode = new ListNode(ndata);
+  newNode->next = head;
+  head = newNode;
+  length++;
 }
 
 /**
@@ -70,32 +61,25 @@ void List<T>::insertFront(T const & ndata)
  *
  * @param ndata The data to be inserted.
  */
-template <class T>
-void List<T>::insertBack(const T & ndata)
-{
+template <class T> void List<T>::insertBack(const T &ndata) {
     // @todo Graded in lab_gdb
-    ListNode * temp = head;
+    ListNode *temp = head;
 
-    if (temp == NULL)
-    {
+    if (temp == NULL) {
         head = new ListNode(ndata);
-    }
-    else
-    {
+    } else {
         while (temp->next != NULL)
             temp = temp->next;
-        temp = new ListNode(ndata);
-        length++;
-    }
+        temp->next = new ListNode(ndata);
+  }
+    length++;
 }
 
 /**
  * Reverses the current List.
  */
-template <class T>
-void List<T>::reverse()
-{
-    head = reverse(head, nullptr, length);
+template <class T> void List<T>::reverse() {
+  head = reverse(head, nullptr, length);
 }
 
 /**
@@ -108,21 +92,18 @@ void List<T>::reverse()
  * @param len The length of the remaining list to be reversed
  */
 template <class T>
-typename List<T>::ListNode* List<T>::reverse(ListNode* curr, ListNode* prev, int len)
-{
-    // @todo Graded in lab_gdb
-    ListNode * temp;
-    if (len <= 0)
-    {
-        curr->next = prev;
-        return curr;
-    }
-    else
-    {
-        temp = reverse(curr->next, curr, len-1);
-        curr->next = prev;
-        return temp;
-    }
+typename List<T>::ListNode *List<T>::reverse(ListNode *curr, ListNode *prev,
+                                             int len) {
+  // @todo Graded in lab_gdb
+  ListNode *temp;
+  if (len <= 0) {
+    curr->next = prev;
+    return curr;
+  } else {
+    temp = reverse(curr->next, curr, len - 1);
+    curr->next = prev;
+    return temp;
+  }
 }
 
 /**
@@ -133,8 +114,6 @@ typename List<T>::ListNode* List<T>::reverse(ListNode* curr, ListNode* prev, int
  * split : < 1, 2, 3 >    < 4, 5 >
  * final : < 1, 4, 2, 5, 3 >
  */
-template <class T>
-void List<T>::shuffle()
-{
-    // @todo Graded in lab_gdb
+template <class T> void List<T>::shuffle() {
+  // @todo Graded in lab_gdb
 }
