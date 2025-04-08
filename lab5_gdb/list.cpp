@@ -26,6 +26,8 @@
  * Destroys the current List. This function ensures that
  * memory does not leak on destruction of a list.
  */
+#include <list>
+#include <vector>
 template <class T> List<T>::~List() { clear(); }
 
 /**
@@ -62,17 +64,17 @@ template <class T> void List<T>::insertFront(T const &ndata) {
  * @param ndata The data to be inserted.
  */
 template <class T> void List<T>::insertBack(const T &ndata) {
-    // @todo Graded in lab_gdb
-    ListNode *temp = head;
+  // @todo Graded in lab_gdb
+  ListNode *temp = head;
 
-    if (temp == NULL) {
-        head = new ListNode(ndata);
-    } else {
-        while (temp->next != NULL)
-            temp = temp->next;
-        temp->next = new ListNode(ndata);
+  if (temp == NULL) {
+    head = new ListNode(ndata);
+  } else {
+    while (temp->next != NULL)
+      temp = temp->next;
+    temp->next = new ListNode(ndata);
   }
-    length++;
+  length++;
 }
 
 /**
@@ -96,6 +98,9 @@ typename List<T>::ListNode *List<T>::reverse(ListNode *curr, ListNode *prev,
                                              int len) {
   // @todo Graded in lab_gdb
   ListNode *temp;
+  if (curr == nullptr) {
+    return prev;
+  }
   if (len <= 0) {
     curr->next = prev;
     return curr;
@@ -116,4 +121,33 @@ typename List<T>::ListNode *List<T>::reverse(ListNode *curr, ListNode *prev,
  */
 template <class T> void List<T>::shuffle() {
   // @todo Graded in lab_gdb
+    if (head == nullptr || head->next == nullptr) {
+        return;
+    }
+    //Split deck
+    int midpoint = (length + 1) / 2;
+    ListNode *first = head;
+    ListNode *second = head;
+
+    for (int i = 0; i < midpoint - 1; ++i) {
+        second = second->next;
+    }
+
+    //Split
+    ListNode * secondHalf = second->next;
+    second->next = nullptr;
+
+    // Interleave
+    ListNode *splitL = first;
+    ListNode *splitR = secondHalf;
+    while (splitR != nullptr) {
+        ListNode * next1 = splitL->next;
+        ListNode * next2 = splitR->next;
+
+        splitL->next = splitR;
+        splitR->next = next1;
+
+        splitL = next1;
+        splitR = next2;
+    }
 }
