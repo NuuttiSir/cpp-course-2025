@@ -4,7 +4,7 @@ CMakeFiles/Pixelmancy.dir/src/Circle.cpp.o: \
  /home/nuuttisir/cpp-course-2025/Pixelmancy/src/Circle.hpp \
  /home/nuuttisir/cpp-course-2025/Pixelmancy/src/Common.hpp \
  /home/nuuttisir/cpp-course-2025/Pixelmancy/src/Image.hpp \
- /home/nuuttisir/cpp-course-2025/Pixelmancy/src/logger/Log.hpp \
+ /home/nuuttisir/cpp-course-2025/Pixelmancy/src/ColorPalette.hpp \
  /usr/include/c++/14.2.1/memory /usr/include/c++/14.2.1/bits/memoryfwd.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -113,6 +113,21 @@ CMakeFiles/Pixelmancy.dir/src/Circle.cpp.o: \
  /usr/include/c++/14.2.1/backward/auto_ptr.h \
  /usr/include/c++/14.2.1/pstl/glue_memory_defs.h \
  /usr/include/c++/14.2.1/pstl/execution_defs.h \
+ /usr/include/c++/14.2.1/unordered_set \
+ /usr/include/c++/14.2.1/initializer_list \
+ /usr/include/c++/14.2.1/bits/unordered_set.h \
+ /usr/include/c++/14.2.1/bits/hashtable.h \
+ /usr/include/c++/14.2.1/bits/hashtable_policy.h \
+ /usr/include/c++/14.2.1/bits/enable_special_members.h \
+ /usr/include/c++/14.2.1/bits/node_handle.h \
+ /usr/include/c++/14.2.1/bits/range_access.h \
+ /usr/include/c++/14.2.1/bits/erase_if.h \
+ /usr/include/c++/14.2.1/bits/memory_resource.h \
+ /usr/include/c++/14.2.1/cstddef \
+ /usr/include/c++/14.2.1/bits/uses_allocator_args.h \
+ /home/nuuttisir/cpp-course-2025/Pixelmancy/src/CommonConfig.hpp \
+ /usr/include/c++/14.2.1/cstdint \
+ /home/nuuttisir/cpp-course-2025/Pixelmancy/src/logger/Log.hpp \
  /home/nuuttisir/cpp-course-2025/Pixelmancy/src/logger/ostream_logger.hpp \
  /usr/include/c++/14.2.1/filesystem /usr/include/c++/14.2.1/bits/fs_fwd.h \
  /usr/include/c++/14.2.1/system_error \
@@ -129,8 +144,6 @@ CMakeFiles/Pixelmancy.dir/src/Circle.cpp.o: \
  /usr/include/bits/locale.h /usr/include/c++/14.2.1/cctype \
  /usr/include/ctype.h /usr/include/c++/14.2.1/bits/ostream_insert.h \
  /usr/include/c++/14.2.1/bits/cxxabi_forced.h \
- /usr/include/c++/14.2.1/bits/range_access.h \
- /usr/include/c++/14.2.1/initializer_list \
  /usr/include/c++/14.2.1/bits/basic_string.h \
  /usr/include/c++/14.2.1/string_view \
  /usr/include/c++/14.2.1/bits/string_view.tcc \
@@ -148,12 +161,8 @@ CMakeFiles/Pixelmancy.dir/src/Circle.cpp.o: \
  /usr/include/bits/types/cookie_io_functions_t.h \
  /usr/include/bits/stdio_lim.h /usr/include/c++/14.2.1/bits/charconv.h \
  /usr/include/c++/14.2.1/bits/basic_string.tcc \
- /usr/include/c++/14.2.1/bits/memory_resource.h \
- /usr/include/c++/14.2.1/cstddef \
- /usr/include/c++/14.2.1/bits/uses_allocator_args.h \
- /usr/include/c++/14.2.1/cstdint /usr/include/c++/14.2.1/bits/chrono.h \
- /usr/include/c++/14.2.1/ratio /usr/include/c++/14.2.1/limits \
- /usr/include/c++/14.2.1/ctime \
+ /usr/include/c++/14.2.1/bits/chrono.h /usr/include/c++/14.2.1/ratio \
+ /usr/include/c++/14.2.1/limits /usr/include/c++/14.2.1/ctime \
  /usr/include/c++/14.2.1/bits/parse_numbers.h \
  /usr/include/c++/14.2.1/bits/fs_path.h /usr/include/c++/14.2.1/locale \
  /usr/include/c++/14.2.1/bits/locale_classes.h \
@@ -185,15 +194,6 @@ CMakeFiles/Pixelmancy.dir/src/Circle.cpp.o: \
  /usr/include/c++/14.2.1/bits/fs_dir.h \
  /usr/include/c++/14.2.1/bits/fs_ops.h \
  /home/nuuttisir/cpp-course-2025/Pixelmancy/src/logger/Logger.hpp \
- /home/nuuttisir/cpp-course-2025/Pixelmancy/src/ColorPalette.hpp \
- /usr/include/c++/14.2.1/unordered_set \
- /usr/include/c++/14.2.1/bits/unordered_set.h \
- /usr/include/c++/14.2.1/bits/hashtable.h \
- /usr/include/c++/14.2.1/bits/hashtable_policy.h \
- /usr/include/c++/14.2.1/bits/enable_special_members.h \
- /usr/include/c++/14.2.1/bits/node_handle.h \
- /usr/include/c++/14.2.1/bits/erase_if.h \
- /home/nuuttisir/cpp-course-2025/Pixelmancy/src/CommonConfig.hpp \
  /home/nuuttisir/cpp-course-2025/Pixelmancy/src/colors/ColorHash.hpp \
  /usr/include/c++/14.2.1/functional \
  /usr/include/c++/14.2.1/bits/std_function.h \
