@@ -109,13 +109,13 @@
 },
 {
   "directory": "/home/nuuttisir/cpp-course-2025/Pixelmancy/build/libs/cgif",
-  "command": "/usr/bin/cc -Dcgif_lib_EXPORTS -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cgif/inc  -O0 -std=c99 -fPIC -o CMakeFiles/cgif_lib.dir/src/cgif.c.o -c /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cgif/src/cgif.c",
+  "command": "/usr/bin/cc -Dcgif_lib_EXPORTS -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cgif/inc -g -O0 -std=c99 -fPIC -o CMakeFiles/cgif_lib.dir/src/cgif.c.o -c /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cgif/src/cgif.c",
   "file": "/home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cgif/src/cgif.c",
   "output": "libs/cgif/CMakeFiles/cgif_lib.dir/src/cgif.c.o"
 },
 {
   "directory": "/home/nuuttisir/cpp-course-2025/Pixelmancy/build/libs/cgif",
-  "command": "/usr/bin/cc -Dcgif_lib_EXPORTS -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cgif/inc  -O0 -std=c99 -fPIC -o CMakeFiles/cgif_lib.dir/src/cgif_raw.c.o -c /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cgif/src/cgif_raw.c",
+  "command": "/usr/bin/cc -Dcgif_lib_EXPORTS -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cgif/inc -g -O0 -std=c99 -fPIC -o CMakeFiles/cgif_lib.dir/src/cgif_raw.c.o -c /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cgif/src/cgif_raw.c",
   "file": "/home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cgif/src/cgif_raw.c",
   "output": "libs/cgif/CMakeFiles/cgif_lib.dir/src/cgif_raw.c.o"
 },

@@ -8,36 +8,36 @@
 
 namespace pixelmancy {
 
-Image Image::mergeImages(const Image &firstImage, const Image &secondImag) {
-  if (firstImage.isEmpty() && secondImag.isEmpty()) {
+Image Image::mergeImages(const Image &firstImage, const Image &secondImage) {
+  if (firstImage.isEmpty() && secondImage.isEmpty()) {
     return Image(0, 0);
   }
   if (firstImage.isEmpty()) {
-    return Image(secondImag);
+    return Image(secondImage);
   }
-  if (secondImag.isEmpty()) {
+  if (secondImage.isEmpty()) {
     return Image(firstImage);
   }
 
-  auto maxWidth = std::max(firstImage.getWidth(), secondImag.getWidth());
-  auto maxHeight = std::max(firstImage.getHeight(), secondImag.getHeight());
+  auto maxWidth = std::max(firstImage.getWidth(), secondImage.getWidth());
+  auto maxHeight = std::max(firstImage.getHeight(), secondImage.getHeight());
 
-  Image *img = new Image(maxWidth, maxHeight);
+  Image img(maxWidth, maxHeight);
 
   for (int i = 0; i < firstImage.getWidth(); i++) {
     for (int j = 0; j < firstImage.getHeight(); j++) {
       Color firstColor = firstImage(i, j);
-      (*img)(i, j) = firstColor;
+      img(i, j) = firstColor;
     }
   }
 
-  for (int i = 0; i < secondImag.getWidth(); i++) {
-    for (int j = 0; j < secondImag.getHeight(); j++) {
-      const Color secondColor = secondImag(i, j);
-      (*img)(i, j) = secondColor;
+  for (int i = 0; i < secondImage.getWidth(); i++) {
+    for (int j = 0; j < secondImage.getHeight(); j++) {
+      const Color secondColor = secondImage(i, j);
+      img(i, j) = secondColor;
     }
   }
-  return *(img);
+  return img;
 }
 
 Image::Image(int width, int height, const Color &background)
@@ -53,8 +53,7 @@ Image::Image(int width, int height, const Color &background)
 
 Image::Image(const Image &other)
     : m_imageDimensions(other.m_imageDimensions), m_pixels(other.m_pixels),
-      m_colorPalette(other.m_colorPalette) {
-}
+      m_colorPalette(other.m_colorPalette) {}
 
 Image::Image(Image &&other) noexcept
     : m_imageDimensions(other.m_imageDimensions),
@@ -106,20 +105,23 @@ Image Image::resize(double percentage) const {
   }
   if (width <= 0 || height <= 0) {
     P_LOG_ERROR() << "Invalid image dimensions after resize\n";
-    return *(new Image(0, 0));
+    return Image(0, 0);
   }
-  double scaleX = 2;
-  double scaleY = 2;
+  double scaleX = static_cast<double>(m_imageDimensions.width) / width;
+  double scaleY = static_cast<double>(m_imageDimensions.height) / height;
   Image newImage(width, height, WHITE);
-  // P_LOG_DEBUG() << fmt::format("Resizing image from {}x{} to {}x{}\n",
-  // m_imageDimensions.width, m_imageDimensions.height, width, height);
-  // P_LOG_DEBUG() << fmt::format("Width scale : {} Height scale : {}\n",
-  // widthScale, heightScale);
   for (int i = 0; i < width; i++) {
     for (int j = 0; j < height; j++) {
-      // Calculate the corresponding pixel in the original image
       int originalX = static_cast<int>(std::floor(i * scaleX));
       int originalY = static_cast<int>(std::floor(j * scaleY));
+      if (originalY < 0)
+        originalY = 0;
+      if (originalX < 0)
+        originalX = 0;
+      if (originalY >= m_imageDimensions.height)
+        originalY = m_imageDimensions.height - 1;
+      if (originalX >= m_imageDimensions.width)
+        originalX = m_imageDimensions.width - 1;
       const Color &clr = (*this)(originalY, originalX);
       newImage(j, i) = clr;
     }
@@ -136,9 +138,9 @@ bool Image::replaceColorPalette(const ColorPallette &colorPalette) {
 }
 
 bool Image::replaceColorPalette(ColorPallette &&colorPalette) {
-  P_LOG_DEBUG() << "ColorPallette&& colorPalette\n";
+  P_LOG_DEBUG() << "ColorPalette&& colorPalette\n";
   if (m_colorPalette.size() != colorPalette.size()) {
-    P_LOG_DEBUG() << "Color palettes dementions does not match\n";
+    P_LOG_DEBUG() << "Color palettes dimensions do not match\n";
     return false;
   }
   m_colorPalette = std::move(colorPalette);
@@ -159,11 +161,10 @@ bool Image::reduceColorPalette(std::size_t expectedPaletteSize) {
     m_pixels[i] = static_cast<uint16_t>(oldToNewIndexMap[m_pixels[i]]);
   }
 
-  // P_LOG_DEBUG() << fmt::format("Reduced color palette from {} to {}\n",
-  // colorPalette.size(), m_colorPalette.size());
   return true;
 }
 
+// Removed rvalue reference return for member variable
 ColorPallette &&Image::colorPalette() { return std::move(m_colorPalette); }
 
 const ColorPallette &Image::getColorPalette() { return m_colorPalette; }

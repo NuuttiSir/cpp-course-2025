@@ -15,8 +15,8 @@ public:
   Image(int width, int height, const Color &background = BLACK);
   Image(const Image &other);
   Image(Image &&other) noexcept;
-  Image &operator=(const Image &other) ;
-  Image &operator=(Image &&other) noexcept ;
+  Image &operator=(const Image &other) = default;
+  Image &operator=(Image &&other) noexcept = default;
 
   ~Image() = default;
 

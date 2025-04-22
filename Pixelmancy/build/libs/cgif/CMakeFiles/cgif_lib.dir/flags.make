@@ -6,5 +6,5 @@ C_DEFINES = -Dcgif_lib_EXPORTS
 
 C_INCLUDES = -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cgif/inc
 
-C_FLAGS =  -O0 -std=c99 -fPIC
+C_FLAGS = -g -O0 -std=c99 -fPIC
 

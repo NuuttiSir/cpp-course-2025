@@ -35,7 +35,7 @@ bool ColorPallette::operator==(const ColorPallette &other) const {
 }
 
 bool ColorPallette::operator!=(const ColorPallette &other) const {
-  return *this == other;
+  return !(*this == other);
 }
 
 ColorPallette &ColorPallette::operator=(ColorPallette &&other) {
