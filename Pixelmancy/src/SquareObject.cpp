@@ -13,8 +13,10 @@ void SquareObject::drawOn(Image& image) const
     const float angle = m_angle;
     const double radAngle = angle * (M_PI / 180.0f);
 
-    const int xCorners[4] = {0, m_size2d.width, m_size2d.width, 0};
-    const int yCorners[4] = {0, 0, m_size2d.height, m_size2d.height};
+    //const int xCorners[4] = {0, m_size2d.width, m_size2d.width, 0};
+    //const int yCorners[4] = {0, 0, m_size2d.height, m_size2d.height};
+    const int xCorners[4] = {-m_size2d.width/2, m_size2d.width/2, m_size2d.width/2, -m_size2d.width/2};
+    const int yCorners[4] = {-m_size2d.height/2, -m_size2d.height/2, m_size2d.height/2, m_size2d.height/2};
 
     Point rotatedCorners[4];
     for (int i = 0; i < 4; i++)

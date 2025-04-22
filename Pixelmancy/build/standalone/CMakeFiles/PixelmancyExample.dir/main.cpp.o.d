@@ -1,6 +1,7 @@
 standalone/CMakeFiles/PixelmancyExample.dir/main.cpp.o: \
  /home/nuuttisir/cpp-course-2025/Pixelmancy/standalone/main.cpp \
  /usr/include/stdc-predef.h \
+ /home/nuuttisir/cpp-course-2025/Pixelmancy/build/standalone/config.hpp \
  /home/nuuttisir/cpp-course-2025/Pixelmancy/src/CircleObject.hpp \
  /home/nuuttisir/cpp-course-2025/Pixelmancy/src/logger/Log.hpp \
  /usr/include/c++/14.2.1/memory /usr/include/c++/14.2.1/bits/memoryfwd.h \
@@ -281,6 +282,4 @@ standalone/CMakeFiles/PixelmancyExample.dir/main.cpp.o: \
  /usr/include/c++/14.2.1/bits/regex.tcc \
  /usr/include/c++/14.2.1/bits/regex_executor.h \
  /usr/include/c++/14.2.1/bits/regex_executor.tcc \
- /usr/include/c++/14.2.1/optional \
- /home/nuuttisir/cpp-course-2025/Pixelmancy/build/standalone/config.hpp \
- /usr/include/c++/14.2.1/iostream
+ /usr/include/c++/14.2.1/optional /usr/include/c++/14.2.1/iostream

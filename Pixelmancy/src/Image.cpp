@@ -110,10 +110,10 @@ Image Image::resize(double percentage) const {
   double scaleX = static_cast<double>(m_imageDimensions.width) / width;
   double scaleY = static_cast<double>(m_imageDimensions.height) / height;
   Image newImage(width, height, WHITE);
-  for (int i = 0; i < width; i++) {
-    for (int j = 0; j < height; j++) {
-      int originalX = static_cast<int>(std::floor(i * scaleX));
-      int originalY = static_cast<int>(std::floor(j * scaleY));
+  for (int y = 0; y < height; y++) {
+    for (int x = 0; x < width; x++) {
+      int originalX = static_cast<int>(std::floor(x * scaleX));
+      int originalY = static_cast<int>(std::floor(y * scaleY));
       if (originalY < 0)
         originalY = 0;
       if (originalX < 0)
@@ -123,7 +123,7 @@ Image Image::resize(double percentage) const {
       if (originalX >= m_imageDimensions.width)
         originalX = m_imageDimensions.width - 1;
       const Color &clr = (*this)(originalY, originalX);
-      newImage(j, i) = clr;
+      newImage(y, x) = clr;
     }
   }
   return newImage;
