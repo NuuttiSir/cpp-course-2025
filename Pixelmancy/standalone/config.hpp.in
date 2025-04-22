@@ -1,0 +1,5 @@
+#pragma once
+
+#define TREE_IMAGE "${CMAKE_SOURCE_DIR}/data/tree.png"
+#define DOG_IMAGE "${CMAKE_SOURCE_DIR}/data/dog.png"
+#define OUTPUT_FOLDER "${CMAKE_SOURCE_DIR}/data/output"

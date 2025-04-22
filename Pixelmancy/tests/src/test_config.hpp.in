@@ -1,0 +1,7 @@
+#ifndef TEST_CONFIG_H_IN_H
+#define TEST_CONFIG_H_IN_H
+
+#define TEST_IMAGE_OUTPUT_FOLDER "${CMAKE_SOURCE_DIR}/data/output/test"
+#define TEST_IMAGE_INPUT_FOLDER "${CMAKE_CURRENT_BINARY_DIR}/"
+
+#endif  // TEST_CONFIG_H_IN_H
