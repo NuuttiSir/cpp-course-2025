@@ -1,0 +1,13 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/nuuttisir/cpp-course-2025/Pixelmancy/build/cmake_install.cmake",
+		"/home/nuuttisir/cpp-course-2025/Pixelmancy/build/libs/cmake_install.cmake",
+		"/home/nuuttisir/cpp-course-2025/Pixelmancy/build/libs/cxxopts-3.2.0/cmake_install.cmake",
+		"/home/nuuttisir/cpp-course-2025/Pixelmancy/build/libs/cxxopts-3.2.0/include/cmake_install.cmake",
+		"/home/nuuttisir/cpp-course-2025/Pixelmancy/build/libs/lodepng/cmake_install.cmake",
+		"/home/nuuttisir/cpp-course-2025/Pixelmancy/build/libs/cgif/cmake_install.cmake",
+		"/home/nuuttisir/cpp-course-2025/Pixelmancy/build/standalone/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

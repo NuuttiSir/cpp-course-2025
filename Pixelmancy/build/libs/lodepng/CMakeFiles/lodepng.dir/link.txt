@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g -O0 -Wl,--dependency-file=CMakeFiles/lodepng.dir/link.d -shared -Wl,-soname,liblodepng.so.1 -o liblodepng.so.1.0.0 CMakeFiles/lodepng.dir/lodepng.cpp.o

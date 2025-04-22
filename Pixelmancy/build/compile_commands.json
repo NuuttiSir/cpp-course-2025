@@ -1,0 +1,128 @@
+[
+{
+  "directory": "/home/nuuttisir/cpp-course-2025/Pixelmancy/build",
+  "command": "/usr/bin/c++   -g -O0 -std=c++17 -o CMakeFiles/logger.dir/src/logger/Log.cpp.o -c /home/nuuttisir/cpp-course-2025/Pixelmancy/src/logger/Log.cpp",
+  "file": "/home/nuuttisir/cpp-course-2025/Pixelmancy/src/logger/Log.cpp",
+  "output": "CMakeFiles/logger.dir/src/logger/Log.cpp.o"
+},
+{
+  "directory": "/home/nuuttisir/cpp-course-2025/Pixelmancy/build",
+  "command": "/usr/bin/c++ -DFMT_SHARED -I/home/nuuttisir/cpp-course-2025/Pixelmancy/src/logger -g -O0 -std=c++17 -o CMakeFiles/colors.dir/src/colors/ColorMatcher.cpp.o -c /home/nuuttisir/cpp-course-2025/Pixelmancy/src/colors/ColorMatcher.cpp",
+  "file": "/home/nuuttisir/cpp-course-2025/Pixelmancy/src/colors/ColorMatcher.cpp",
+  "output": "CMakeFiles/colors.dir/src/colors/ColorMatcher.cpp.o"
+},
+{
+  "directory": "/home/nuuttisir/cpp-course-2025/Pixelmancy/build",
+  "command": "/usr/bin/c++ -DFMT_SHARED -I/home/nuuttisir/cpp-course-2025/Pixelmancy/src/logger -g -O0 -std=c++17 -o CMakeFiles/colors.dir/src/colors/ColorSpaceDistance.cpp.o -c /home/nuuttisir/cpp-course-2025/Pixelmancy/src/colors/ColorSpaceDistance.cpp",
+  "file": "/home/nuuttisir/cpp-course-2025/Pixelmancy/src/colors/ColorSpaceDistance.cpp",
+  "output": "CMakeFiles/colors.dir/src/colors/ColorSpaceDistance.cpp.o"
+},
+{
+  "directory": "/home/nuuttisir/cpp-course-2025/Pixelmancy/build",
+  "command": "/usr/bin/c++ -DFMT_SHARED -I/home/nuuttisir/cpp-course-2025/Pixelmancy/src -I/home/nuuttisir/cpp-course-2025/Pixelmancy/libs/lodepng -I/home/nuuttisir/cpp-course-2025/Pixelmancy/src/logger -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/fmt-11.1.3/include -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cgif/inc -g -O0 -std=c++17 -o CMakeFiles/Pixelmancy.dir/src/Circle.cpp.o -c /home/nuuttisir/cpp-course-2025/Pixelmancy/src/Circle.cpp",
+  "file": "/home/nuuttisir/cpp-course-2025/Pixelmancy/src/Circle.cpp",
+  "output": "CMakeFiles/Pixelmancy.dir/src/Circle.cpp.o"
+},
+{
+  "directory": "/home/nuuttisir/cpp-course-2025/Pixelmancy/build",
+  "command": "/usr/bin/c++ -DFMT_SHARED -I/home/nuuttisir/cpp-course-2025/Pixelmancy/src -I/home/nuuttisir/cpp-course-2025/Pixelmancy/libs/lodepng -I/home/nuuttisir/cpp-course-2025/Pixelmancy/src/logger -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/fmt-11.1.3/include -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cgif/inc -g -O0 -std=c++17 -o CMakeFiles/Pixelmancy.dir/src/CircleObject.cpp.o -c /home/nuuttisir/cpp-course-2025/Pixelmancy/src/CircleObject.cpp",
+  "file": "/home/nuuttisir/cpp-course-2025/Pixelmancy/src/CircleObject.cpp",
+  "output": "CMakeFiles/Pixelmancy.dir/src/CircleObject.cpp.o"
+},
+{
+  "directory": "/home/nuuttisir/cpp-course-2025/Pixelmancy/build",
+  "command": "/usr/bin/c++ -DFMT_SHARED -I/home/nuuttisir/cpp-course-2025/Pixelmancy/src -I/home/nuuttisir/cpp-course-2025/Pixelmancy/libs/lodepng -I/home/nuuttisir/cpp-course-2025/Pixelmancy/src/logger -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/fmt-11.1.3/include -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cgif/inc -g -O0 -std=c++17 -o CMakeFiles/Pixelmancy.dir/src/ColorPalette.cpp.o -c /home/nuuttisir/cpp-course-2025/Pixelmancy/src/ColorPalette.cpp",
+  "file": "/home/nuuttisir/cpp-course-2025/Pixelmancy/src/ColorPalette.cpp",
+  "output": "CMakeFiles/Pixelmancy.dir/src/ColorPalette.cpp.o"
+},
+{
+  "directory": "/home/nuuttisir/cpp-course-2025/Pixelmancy/build",
+  "command": "/usr/bin/c++ -DFMT_SHARED -I/home/nuuttisir/cpp-course-2025/Pixelmancy/src -I/home/nuuttisir/cpp-course-2025/Pixelmancy/libs/lodepng -I/home/nuuttisir/cpp-course-2025/Pixelmancy/src/logger -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/fmt-11.1.3/include -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cgif/inc -g -O0 -std=c++17 -o CMakeFiles/Pixelmancy.dir/src/DrawableObject.cpp.o -c /home/nuuttisir/cpp-course-2025/Pixelmancy/src/DrawableObject.cpp",
+  "file": "/home/nuuttisir/cpp-course-2025/Pixelmancy/src/DrawableObject.cpp",
+  "output": "CMakeFiles/Pixelmancy.dir/src/DrawableObject.cpp.o"
+},
+{
+  "directory": "/home/nuuttisir/cpp-course-2025/Pixelmancy/build",
+  "command": "/usr/bin/c++ -DFMT_SHARED -I/home/nuuttisir/cpp-course-2025/Pixelmancy/src -I/home/nuuttisir/cpp-course-2025/Pixelmancy/libs/lodepng -I/home/nuuttisir/cpp-course-2025/Pixelmancy/src/logger -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/fmt-11.1.3/include -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cgif/inc -g -O0 -std=c++17 -o CMakeFiles/Pixelmancy.dir/src/FilledShape.cpp.o -c /home/nuuttisir/cpp-course-2025/Pixelmancy/src/FilledShape.cpp",
+  "file": "/home/nuuttisir/cpp-course-2025/Pixelmancy/src/FilledShape.cpp",
+  "output": "CMakeFiles/Pixelmancy.dir/src/FilledShape.cpp.o"
+},
+{
+  "directory": "/home/nuuttisir/cpp-course-2025/Pixelmancy/build",
+  "command": "/usr/bin/c++ -DFMT_SHARED -I/home/nuuttisir/cpp-course-2025/Pixelmancy/src -I/home/nuuttisir/cpp-course-2025/Pixelmancy/libs/lodepng -I/home/nuuttisir/cpp-course-2025/Pixelmancy/src/logger -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/fmt-11.1.3/include -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cgif/inc -g -O0 -std=c++17 -o CMakeFiles/Pixelmancy.dir/src/Gif.cpp.o -c /home/nuuttisir/cpp-course-2025/Pixelmancy/src/Gif.cpp",
+  "file": "/home/nuuttisir/cpp-course-2025/Pixelmancy/src/Gif.cpp",
+  "output": "CMakeFiles/Pixelmancy.dir/src/Gif.cpp.o"
+},
+{
+  "directory": "/home/nuuttisir/cpp-course-2025/Pixelmancy/build",
+  "command": "/usr/bin/c++ -DFMT_SHARED -I/home/nuuttisir/cpp-course-2025/Pixelmancy/src -I/home/nuuttisir/cpp-course-2025/Pixelmancy/libs/lodepng -I/home/nuuttisir/cpp-course-2025/Pixelmancy/src/logger -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/fmt-11.1.3/include -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cgif/inc -g -O0 -std=c++17 -o CMakeFiles/Pixelmancy.dir/src/Image.cpp.o -c /home/nuuttisir/cpp-course-2025/Pixelmancy/src/Image.cpp",
+  "file": "/home/nuuttisir/cpp-course-2025/Pixelmancy/src/Image.cpp",
+  "output": "CMakeFiles/Pixelmancy.dir/src/Image.cpp.o"
+},
+{
+  "directory": "/home/nuuttisir/cpp-course-2025/Pixelmancy/build",
+  "command": "/usr/bin/c++ -DFMT_SHARED -I/home/nuuttisir/cpp-course-2025/Pixelmancy/src -I/home/nuuttisir/cpp-course-2025/Pixelmancy/libs/lodepng -I/home/nuuttisir/cpp-course-2025/Pixelmancy/src/logger -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/fmt-11.1.3/include -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cgif/inc -g -O0 -std=c++17 -o CMakeFiles/Pixelmancy.dir/src/Line.cpp.o -c /home/nuuttisir/cpp-course-2025/Pixelmancy/src/Line.cpp",
+  "file": "/home/nuuttisir/cpp-course-2025/Pixelmancy/src/Line.cpp",
+  "output": "CMakeFiles/Pixelmancy.dir/src/Line.cpp.o"
+},
+{
+  "directory": "/home/nuuttisir/cpp-course-2025/Pixelmancy/build",
+  "command": "/usr/bin/c++ -DFMT_SHARED -I/home/nuuttisir/cpp-course-2025/Pixelmancy/src -I/home/nuuttisir/cpp-course-2025/Pixelmancy/libs/lodepng -I/home/nuuttisir/cpp-course-2025/Pixelmancy/src/logger -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/fmt-11.1.3/include -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cgif/inc -g -O0 -std=c++17 -o CMakeFiles/Pixelmancy.dir/src/LineArt.cpp.o -c /home/nuuttisir/cpp-course-2025/Pixelmancy/src/LineArt.cpp",
+  "file": "/home/nuuttisir/cpp-course-2025/Pixelmancy/src/LineArt.cpp",
+  "output": "CMakeFiles/Pixelmancy.dir/src/LineArt.cpp.o"
+},
+{
+  "directory": "/home/nuuttisir/cpp-course-2025/Pixelmancy/build",
+  "command": "/usr/bin/c++ -DFMT_SHARED -I/home/nuuttisir/cpp-course-2025/Pixelmancy/src -I/home/nuuttisir/cpp-course-2025/Pixelmancy/libs/lodepng -I/home/nuuttisir/cpp-course-2025/Pixelmancy/src/logger -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/fmt-11.1.3/include -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cgif/inc -g -O0 -std=c++17 -o CMakeFiles/Pixelmancy.dir/src/PNG.cpp.o -c /home/nuuttisir/cpp-course-2025/Pixelmancy/src/PNG.cpp",
+  "file": "/home/nuuttisir/cpp-course-2025/Pixelmancy/src/PNG.cpp",
+  "output": "CMakeFiles/Pixelmancy.dir/src/PNG.cpp.o"
+},
+{
+  "directory": "/home/nuuttisir/cpp-course-2025/Pixelmancy/build",
+  "command": "/usr/bin/c++ -DFMT_SHARED -I/home/nuuttisir/cpp-course-2025/Pixelmancy/src -I/home/nuuttisir/cpp-course-2025/Pixelmancy/libs/lodepng -I/home/nuuttisir/cpp-course-2025/Pixelmancy/src/logger -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/fmt-11.1.3/include -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cgif/inc -g -O0 -std=c++17 -o CMakeFiles/Pixelmancy.dir/src/SquareObject.cpp.o -c /home/nuuttisir/cpp-course-2025/Pixelmancy/src/SquareObject.cpp",
+  "file": "/home/nuuttisir/cpp-course-2025/Pixelmancy/src/SquareObject.cpp",
+  "output": "CMakeFiles/Pixelmancy.dir/src/SquareObject.cpp.o"
+},
+{
+  "directory": "/home/nuuttisir/cpp-course-2025/Pixelmancy/build",
+  "command": "/usr/bin/c++ -DFMT_SHARED -I/home/nuuttisir/cpp-course-2025/Pixelmancy/src -I/home/nuuttisir/cpp-course-2025/Pixelmancy/libs/lodepng -I/home/nuuttisir/cpp-course-2025/Pixelmancy/src/logger -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/fmt-11.1.3/include -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cgif/inc -g -O0 -std=c++17 -o CMakeFiles/Pixelmancy.dir/src/colors/ColorMatcher.cpp.o -c /home/nuuttisir/cpp-course-2025/Pixelmancy/src/colors/ColorMatcher.cpp",
+  "file": "/home/nuuttisir/cpp-course-2025/Pixelmancy/src/colors/ColorMatcher.cpp",
+  "output": "CMakeFiles/Pixelmancy.dir/src/colors/ColorMatcher.cpp.o"
+},
+{
+  "directory": "/home/nuuttisir/cpp-course-2025/Pixelmancy/build",
+  "command": "/usr/bin/c++ -DFMT_SHARED -I/home/nuuttisir/cpp-course-2025/Pixelmancy/src -I/home/nuuttisir/cpp-course-2025/Pixelmancy/libs/lodepng -I/home/nuuttisir/cpp-course-2025/Pixelmancy/src/logger -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/fmt-11.1.3/include -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cgif/inc -g -O0 -std=c++17 -o CMakeFiles/Pixelmancy.dir/src/colors/ColorSpaceDistance.cpp.o -c /home/nuuttisir/cpp-course-2025/Pixelmancy/src/colors/ColorSpaceDistance.cpp",
+  "file": "/home/nuuttisir/cpp-course-2025/Pixelmancy/src/colors/ColorSpaceDistance.cpp",
+  "output": "CMakeFiles/Pixelmancy.dir/src/colors/ColorSpaceDistance.cpp.o"
+},
+{
+  "directory": "/home/nuuttisir/cpp-course-2025/Pixelmancy/build",
+  "command": "/usr/bin/c++ -DFMT_SHARED -I/home/nuuttisir/cpp-course-2025/Pixelmancy/src -I/home/nuuttisir/cpp-course-2025/Pixelmancy/libs/lodepng -I/home/nuuttisir/cpp-course-2025/Pixelmancy/src/logger -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/fmt-11.1.3/include -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cgif/inc -g -O0 -std=c++17 -o CMakeFiles/Pixelmancy.dir/src/logger/Log.cpp.o -c /home/nuuttisir/cpp-course-2025/Pixelmancy/src/logger/Log.cpp",
+  "file": "/home/nuuttisir/cpp-course-2025/Pixelmancy/src/logger/Log.cpp",
+  "output": "CMakeFiles/Pixelmancy.dir/src/logger/Log.cpp.o"
+},
+{
+  "directory": "/home/nuuttisir/cpp-course-2025/Pixelmancy/build/libs/lodepng",
+  "command": "/usr/bin/c++ -Dlodepng_EXPORTS -I/home/nuuttisir/cpp-course-2025/Pixelmancy/libs/lodepng -g -O0 -std=c++17 -fPIC -o CMakeFiles/lodepng.dir/lodepng.cpp.o -c /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/lodepng/lodepng.cpp",
+  "file": "/home/nuuttisir/cpp-course-2025/Pixelmancy/libs/lodepng/lodepng.cpp",
+  "output": "libs/lodepng/CMakeFiles/lodepng.dir/lodepng.cpp.o"
+},
+{
+  "directory": "/home/nuuttisir/cpp-course-2025/Pixelmancy/build/libs/cgif",
+  "command": "/usr/bin/cc -Dcgif_lib_EXPORTS -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cgif/inc  -O0 -std=c99 -fPIC -o CMakeFiles/cgif_lib.dir/src/cgif.c.o -c /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cgif/src/cgif.c",
+  "file": "/home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cgif/src/cgif.c",
+  "output": "libs/cgif/CMakeFiles/cgif_lib.dir/src/cgif.c.o"
+},
+{
+  "directory": "/home/nuuttisir/cpp-course-2025/Pixelmancy/build/libs/cgif",
+  "command": "/usr/bin/cc -Dcgif_lib_EXPORTS -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cgif/inc  -O0 -std=c99 -fPIC -o CMakeFiles/cgif_lib.dir/src/cgif_raw.c.o -c /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cgif/src/cgif_raw.c",
+  "file": "/home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cgif/src/cgif_raw.c",
+  "output": "libs/cgif/CMakeFiles/cgif_lib.dir/src/cgif_raw.c.o"
+},
+{
+  "directory": "/home/nuuttisir/cpp-course-2025/Pixelmancy/build/standalone",
+  "command": "/usr/bin/c++ -DFMT_SHARED -I/home/nuuttisir/cpp-course-2025/Pixelmancy/build/standalone -I/home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cxxopts-3.2.0/include -I/home/nuuttisir/cpp-course-2025/Pixelmancy/src -I/home/nuuttisir/cpp-course-2025/Pixelmancy/libs/lodepng -I/home/nuuttisir/cpp-course-2025/Pixelmancy/src/logger -isystem /home/nuuttisir/cpp-course-2025/Pixelmancy/libs/cgif/inc -g -O0 -std=c++17 -o CMakeFiles/PixelmancyExample.dir/main.cpp.o -c /home/nuuttisir/cpp-course-2025/Pixelmancy/standalone/main.cpp",
+  "file": "/home/nuuttisir/cpp-course-2025/Pixelmancy/standalone/main.cpp",
+  "output": "standalone/CMakeFiles/PixelmancyExample.dir/main.cpp.o"
+}
+]

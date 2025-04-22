@@ -1,0 +1,7 @@
+prefix=/home/nuuttisir/cpp-course-2025/Pixelmancy/libs/pre-built
+includedir=${prefix}/include
+
+Name: cxxopts
+Description: 
+Version: 3.2.0
+Cflags: -I${includedir}
