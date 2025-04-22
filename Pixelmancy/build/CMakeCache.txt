@@ -71,7 +71,7 @@ CMAKE_C_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib
 CMAKE_C_FLAGS:STRING=
 
 //Flags used by the C compiler for Asan build type or configuration.
-CMAKE_C_FLAGS_ASAN:STRING= -fsanitize=address -fno-omit-frame-pointer
+CMAKE_C_FLAGS_ASAN:STRING=-g -fsanitize=address -fno-omit-frame-pointer
 
 //Flags used by the C compiler during DEBUG builds.
 CMAKE_C_FLAGS_DEBUG:STRING=-g

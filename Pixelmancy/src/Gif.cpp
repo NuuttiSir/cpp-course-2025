@@ -23,6 +23,7 @@ void Gif::close()
     if (pGIF)
     {
         cgif_close(pGIF);
+        pGIF = nullptr;
     }
     m_localToGlobalMappings.clear();
 }
@@ -90,7 +91,7 @@ bool Gif::save(const std::string& filePath)
         return false;
     }
     loadFrames();
-    // close();
+    close();
     return result == 0;
 }
 
