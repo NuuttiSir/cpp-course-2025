@@ -1,1 +1,1 @@
-/usr/bin/cc -fPIC -g -O0 -Wl,--dependency-file=CMakeFiles/cgif_lib.dir/link.d -shared -Wl,-soname,libcgif_lib.so.1 -o libcgif_lib.so.0.4.0 CMakeFiles/cgif_lib.dir/src/cgif.c.o CMakeFiles/cgif_lib.dir/src/cgif_raw.c.o
+/usr/bin/cc -fPIC  -O0 -Wl,--dependency-file=CMakeFiles/cgif_lib.dir/link.d -shared -Wl,-soname,libcgif_lib.so.1 -o libcgif_lib.so.0.4.0 CMakeFiles/cgif_lib.dir/src/cgif.c.o CMakeFiles/cgif_lib.dir/src/cgif_raw.c.o
