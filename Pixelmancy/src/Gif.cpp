@@ -78,6 +78,7 @@ void Gif::addFrame(const Image& frame, uint16_t delay)
         _height = frame.getHeight();
     }
     _frames.push_back({delay, frame});
+    _frames.push_back({delay, frame});
 }
 
 bool Gif::save(const std::string& filePath)
